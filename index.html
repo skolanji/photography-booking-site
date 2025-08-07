@@ -1,69 +1,108 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Book your Photography or Spoken English Sessions with Joshua K. Sriram - Nordic Explorer Tamil" />
-  <title>Joshua K. Sriram | Photography & Spoken English</title>
+  <title>Photography & Spoken English | Joshua K. Sriram</title>
   <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
+      margin: 0;
       font-family: Arial, sans-serif;
-      background: #fdfdfd;
-      color: #333;
       line-height: 1.6;
-      padding: 2rem;
-      max-width: 700px;
-      margin: auto;
+      background: #fff;
+      color: #222;
     }
-    h1 { font-size: 2rem; margin-bottom: 0.5rem; }
-    h2 { font-size: 1.4rem; margin-top: 2rem; }
-    p { margin: 1rem 0; }
-    a.button {
-      display: inline-block;
-      margin: 1rem 0;
-      padding: 0.6rem 1rem;
-      background: #0077cc;
-      color: white;
+    header {
+      background: #f5f5f5;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 1.2rem;
+    }
+    nav a {
+      margin-left: 1rem;
       text-decoration: none;
-      border-radius: 5px;
+      color: #444;
     }
-    .section { border-top: 1px solid #ddd; padding-top: 1.5rem; margin-top: 1.5rem; }
-    .subtitle { font-size: 0.95rem; color: #666; margin-top: 0.25rem; }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .hero {
+      padding: 3rem 2rem;
+      text-align: center;
+    }
+    .hero h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    section {
+      padding: 2rem;
+      border-top: 1px solid #eee;
+    }
+    section h3 {
+      margin-top: 0;
+    }
+    .button {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.75rem 1.5rem;
+      background: #007bff;
+      color: #fff;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+    .button:hover {
+      background: #0056b3;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #666;
+      border-top: 1px solid #eee;
+    }
+    @media (max-width: 600px) {
+      nav {
+        display: none;
+      }
+    }
   </style>
 </head>
 <body>
   <header>
     <h1>Joshua K. Sriram</h1>
-    <p class="subtitle">aka Nordic Explorer Tamil</p>
-    <p>Book your sessions below:</p>
+    <nav>
+      <a href="#photography">Photography</a>
+      <a href="#spoken">Spoken English</a>
+    </nav>
   </header>
 
-  <div class="section">
-    <h2>📷 Photography Sessions</h2>
-    <p>Get personalized 1:1 photography sessions focused on architecture, street photography, and editing. Available in Tamil & English.</p>
-    <ul>
-      <li>Beginner to Advanced sessions</li>
-      <li>Outdoor shoot guidance or remote feedback</li>
-      <li>Lightroom & Snapseed editing tutorials</li>
-    </ul>
-    <a class="button" href="https://wa.me/919123456789?text=Hi%20Joshua!%20I'm%20interested%20in%20your%20photography%20sessions." target="_blank">📩 Book via WhatsApp</a>
+  <div class="hero">
+    <h2>Welcome to My Booking Page</h2>
+    <p>Select a session below and book directly through WhatsApp</p>
   </div>
 
-  <div class="section">
-    <h2>🗣 Spoken English Coaching</h2>
-    <p>Friendly spoken English coaching to boost fluency and confidence. Especially designed for Tamil speakers and working professionals.</p>
-    <ul>
-      <li>Personalized 1:1 sessions (online)</li>
-      <li>Interview, conversation, and grammar help</li>
-      <li>Tamil + English blended learning</li>
-    </ul>
-    <a class="button" href="https://wa.me/919123456789?text=Hi%20Joshua!%20I%20want%20to%20book%20a%20spoken%20English%20session." target="_blank">📩 Book via WhatsApp</a>
-  </div>
+  <section id="photography">
+    <h3>📸 Nordic Explorer Tamil</h3>
+    <p>Join me for personalized 1:1 or group sessions on mobile & mirrorless photography. Perfect for beginners or hobbyists who want to level up their visual storytelling and post-processing skills.</p>
+    <a class="button" href="https://wa.me/918778587859?text=Hi%20Joshua%2C%20I%20am%20interested%20in%20photography%20coaching" target="_blank">Book Photography Session</a>
+  </section>
 
-  <footer class="section">
-    <p style="font-size: 0.8rem; color: #888;">Copyright © 2025 Joshua K. Sriram</p>
+  <section id="spoken">
+    <h3>🗣 Spoken English with Joshua K. Sriram</h3>
+    <p>Level up your spoken English fluency with a friendly mentor. Ideal for students, job seekers, and working professionals wanting to build confidence and clarity in real-world English conversation.</p>
+    <a class="button" href="https://wa.me/918778587859?text=Hi%20Joshua%2C%20I%20am%20interested%20in%20spoken%20English%20sessions" target="_blank">Book English Session</a>
+  </section>
+
+  <footer>
+    &copy; 2025 Joshua K. Sriram | All rights reserved
   </footer>
 </body>
 </html>
