@@ -2,194 +2,135 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Joshua K. Sriram – Spoken English Mentor</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Joshua K. Sriram - Spoken English Coach</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f9f9f9;
-      color: #333;
-    }
-    header {
-      background: #004aad;
-      color: white;
-      padding: 2rem;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2rem;
-    }
-    header p {
-      margin-top: 0.5rem;
-      font-size: 1.1rem;
-    }
-
-    .section {
-      padding: 2rem;
-      max-width: 900px;
-      margin: auto;
-    }
-    .section h2 {
-      text-align: center;
-      font-size: 1.8rem;
-      margin-bottom: 1rem;
-    }
-    .course-list {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 1.5rem;
-    }
-    .course {
-      background: white;
-      border-radius: 12px;
-      padding: 1.5rem;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-    }
-    .course h3 {
-      margin-top: 0;
-      color: #004aad;
-    }
-    .course p {
-      margin-bottom: 1rem;
-    }
-    .btn {
-      background: #004aad;
-      color: white;
-      padding: 0.75rem 1.2rem;
-      border: none;
-      border-radius: 6px;
-      cursor: pointer;
-      font-size: 1rem;
-    }
-
-    .popup {
-      position: fixed;
-      top: 0; left: 0;
-      width: 100vw;
-      height: 100vh;
-      background: rgba(0,0,0,0.5);
-      display: none;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .popup-content {
-      background: white;
-      padding: 2rem;
-      border-radius: 10px;
-      text-align: center;
-      max-width: 400px;
-    }
-
-    .popup-content h3 {
-      margin-top: 0;
-    }
-
-    .contact-options {
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-      margin-top: 1rem;
-    }
-
-    .contact-options a {
-      background: #004aad;
-      color: white;
-      padding: 0.75rem;
-      text-decoration: none;
-      border-radius: 6px;
-      transition: 0.3s;
-    }
-
-    .contact-options a:hover {
-      background: #00327d;
-    }
-
-    .close-btn {
-      background: transparent;
-      color: #333;
-      border: none;
-      font-size: 1.2rem;
-      margin-top: 1rem;
-      cursor: pointer;
-    }
-
-    footer {
-      text-align: center;
-      padding: 1rem;
-      font-size: 0.9rem;
-      color: #777;
-    }
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Poppins', sans-serif; }
+    body { background: #f9fafc; color: #333; line-height: 1.6; padding: 20px; }
+    header, section { margin-bottom: 40px; }
+    header { text-align: center; }
+    header h1 { font-size: 2.4rem; margin-bottom: 10px; color: #123456; }
+    header p { font-size: 1.2rem; color: #444; }
+    .cta-buttons { margin-top: 20px; }
+    .cta-buttons button { margin: 0 10px; padding: 10px 20px; background: #123456; color: white; border: none; border-radius: 6px; cursor: pointer; }
+    h2 { color: #123456; margin-bottom: 20px; }
+    .courses { display: grid; gap: 20px; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
+    .card { background: white; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.05); }
+    .card h3 { color: #0a2f5c; margin-bottom: 10px; }
+    .card ul { margin-top: 10px; padding-left: 20px; }
+    .testimonials { background: #eef2f7; padding: 30px; border-radius: 10px; }
+    .testimonial { margin-bottom: 20px; }
+    .contact-btn { background: #0a2f5c; color: white; border: none; padding: 10px 16px; border-radius: 6px; cursor: pointer; margin-top: 10px; }
+    .popup { display: none; position: fixed; z-index: 999; left: 0; top: 0; width: 100vw; height: 100vh; background-color: rgba(0, 0, 0, 0.5); justify-content: center; align-items: center; }
+    .popup-content { background: white; padding: 30px; border-radius: 12px; text-align: center; max-width: 300px; }
+    .popup-content a { display: block; margin: 10px 0; text-decoration: none; color: #0a2f5c; font-weight: 600; }
   </style>
 </head>
 <body>
-
-<header>
-  <h1>Joshua K. Sriram</h1>
-  <p>Your Confident Spoken English Mentor</p>
-</header>
-
-<section class="section" id="courses">
-  <h2>Courses Offered</h2>
-  <div class="course-list">
-
-    <div class="course">
-      <h3>Speaking Confidently (Beginners)</h3>
-      <p>Build your foundation in English with confidence-focused beginner lessons.</p>
-      <button class="btn" onclick="openPopup('Speaking Confidently')">Start Speaking Confidently</button>
+  <header>
+    <h1>Joshua K Sriram</h1>
+    <p>Unlock Your Voice: Speak English Confidently, Anywhere.</p>
+    <div class="cta-buttons">
+      <button onclick="openPopup()">Explore My Courses</button>
+      <button onclick="openPopup()">Book a Free Consultation</button>
     </div>
+  </header>
 
-    <div class="course">
-      <h3>Interview Preparation</h3>
-      <p>Crack your interviews with strong communication, body language, and practice sessions.</p>
-      <button class="btn" onclick="openPopup('Interview Preparation')">Book Interview Prep</button>
+  <section>
+    <h2>Your Path to Confident Speaking Starts Here</h2>
+    <div class="courses">
+      <div class="card">
+        <h3>Beginner Foundation</h3>
+        <strong>kr1500</strong>
+        <p>Gain the initial confidence to speak!</p>
+        <ul>
+          <li>8 x 20-min 1-on-1 sessions</li>
+          <li>Build confidence in basic phrases</li>
+          <li>Personalized feedback for clarity</li>
+        </ul>
+        <button class="contact-btn" onclick="openPopup()">Start Speaking Confidently</button>
+      </div>
+      <div class="card">
+        <h3>Intermediate Fluency</h3>
+        <strong>kr2200</strong>
+        <p>Elevate your fluency and confidence for everyday conversations.</p>
+        <ul>
+          <li>10 x 25-min 1-on-1 sessions</li>
+          <li>Boost confidence in daily interactions</li>
+          <li>Master common conversational scenarios</li>
+        </ul>
+        <button class="contact-btn" onclick="openPopup()">Boost Your Conversational Confidence</button>
+      </div>
+      <div class="card">
+        <h3>Advanced Mastery</h3>
+        <strong>Contact Us</strong>
+        <p>Master professional communication and nuanced expression for any context.</p>
+        <ul>
+          <li>Customized session structure</li>
+          <li>Achieve professional communication goals</li>
+          <li>Speak with nuance and impact</li>
+        </ul>
+        <button class="contact-btn" onclick="openPopup()">Master Your English Communication</button>
+      </div>
     </div>
+  </section>
 
-    <div class="course">
-      <h3>Group Discussions & Debates</h3>
-      <p>Improve fluency through active debates, live group conversations, and feedback.</p>
-      <button class="btn" onclick="openPopup('Group Discussions')">Join the Group Session</button>
+  <section>
+    <h2>Your Partner in Building Unstoppable Confidence</h2>
+    <p>Experience a supportive and effective learning environment designed to make <em>anyone</em> a confident English speaker.</p>
+    <ul>
+      <li><strong>Personalized Confidence Building</strong> – Crafted to your learning style.</li>
+      <li><strong>Focus on Real-World Speaking</strong> – Practical conversation & feedback.</li>
+      <li><strong>Accessible & Flexible Learning</strong> – Sessions that fit your schedule.</li>
+      <li><strong>Expert Guidance</strong> – Clear pronunciation & effective communication.</li>
+    </ul>
+  </section>
+
+  <section class="testimonials">
+    <h2>Hear From Our Confident Speakers</h2>
+    <div class="testimonial">
+      <strong>Alex Chen – Beginner Learner</strong>
+      <p>"Joshua made learning English so much less intimidating! His one-on-one sessions were exactly what I needed to overcome my fear of speaking."</p>
     </div>
-
-    <div class="course">
-      <h3>Presentation & Public Speaking</h3>
-      <p>Learn how to structure, speak, and confidently present in public or corporate settings.</p>
-      <button class="btn" onclick="openPopup('Public Speaking')">Join Public Speaking</button>
+    <div class="testimonial">
+      <strong>Maria Garcia – Intermediate Student</strong>
+      <p>"The structured approach and Joshua's patient guidance were fantastic. I improved my pronunciation and confidently join conversations now."</p>
     </div>
+  </section>
 
-  </div>
-</section>
+  <section>
+    <h2>Ready to Speak with Unwavering Confidence?</h2>
+    <p>Book your first session or a free consultation to discuss your goals and how we can achieve them together.</p>
+    <div class="cta-buttons">
+      <button onclick="openPopup()">Book Beginner Package (kr1500)</button>
+      <button onclick="openPopup()">Book Free Consultation</button>
+    </div>
+  </section>
 
-<!-- Popup Contact Box -->
-<div class="popup" id="contactPopup">
-  <div class="popup-content">
-    <h3>Contact to Book: <span id="courseTitle">Course</span></h3>
-    <div class="contact-options">
-      <a href="https://wa.me/919876543210" target="_blank">WhatsApp</a>
-      <a href="mailto:joshuaksriram@email.com">Email</a>
+  <footer style="margin-top: 60px; text-align: center; font-size: 0.9rem; color: #777">
+    © 2025 Joshua K Sriram. All rights reserved.<br>
+    Crafted with passion (no Topmate).
+  </footer>
+
+  <div class="popup" id="contactPopup">
+    <div class="popup-content">
+      <h3>Contact Joshua</h3>
+      <a href="https://wa.me/919999999999" target="_blank">WhatsApp</a>
+      <a href="mailto:joshua@email.com">Email</a>
       <a href="https://instagram.com/joshuaksriram" target="_blank">Instagram</a>
-      <a href="https://www.snapchat.com/add/yourusername" target="_blank">Snapchat</a>
+      <a href="https://snapchat.com/add/yourhandle" target="_blank">Snapchat</a>
+      <button class="contact-btn" onclick="closePopup()">Close</button>
     </div>
-    <button class="close-btn" onclick="closePopup()">Close</button>
   </div>
-</div>
 
-<footer>
-  © 2025 Joshua K. Sriram. All rights reserved.
-</footer>
-
-<script>
-  function openPopup(courseName) {
-    document.getElementById("courseTitle").textContent = courseName;
-    document.getElementById("contactPopup").style.display = "flex";
-  }
-
-  function closePopup() {
-    document.getElementById("contactPopup").style.display = "none";
-  }
-</script>
-
+  <script>
+    function openPopup() {
+      document.getElementById('contactPopup').style.display = 'flex';
+    }
+    function closePopup() {
+      document.getElementById('contactPopup').style.display = 'none';
+    }
+  </script>
 </body>
 </html>
