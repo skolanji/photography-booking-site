@@ -1,264 +1,69 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Photography Booking – Malmö | Outdoor Portraits</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://unpkg.com/lucide@latest"></script>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
-        html { font-family: 'Poppins', sans-serif; }
-    </style>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        'brand': {
-                            'background': '#FDFDFD', /* Clean White Background */
-                            'surface': '#FFFFFF',    /* White for cards/elements */
-                            'primary': '#2563eb',    /* Vibrant Blue */
-                            'secondary': '#4A4A4A',  /* Dark Grey for text */
-                            'muted': '#718096',      /* Medium Grey for subtle text */
-                            'accent': '#E53E3E',     /* Vibrant Red Accent */
-                            'accent-light': '#FFF5F5', /* Light Red for accents */
-                            'dark': '#1A202C'        /* Near Black for strong contrast */
-                        }
-                    },
-                    boxShadow: {
-                        'button-primary': '0 4px 14px 0 rgba(37, 99, 235, 0.5)', /* Shadow for primary blue */
-                        'card': '0 10px 15px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -2px rgba(0, 0, 0, 0.05)', /* Soft card shadow */
-                        'lg-modern': '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)', /* Deeper modern shadow */
-                    },
-                    borderRadius: {
-                        'xl-modern': '1.25rem', /* Slightly larger modern border-radius */
-                        '2xl-modern': '1.75rem',
-                    }
-                }
-            }
-        }
-    </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Book your Photography or Spoken English Sessions with Joshua K. Sriram - Nordic Explorer Tamil" />
+  <title>Joshua K. Sriram | Photography & Spoken English</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: Arial, sans-serif;
+      background: #fdfdfd;
+      color: #333;
+      line-height: 1.6;
+      padding: 2rem;
+      max-width: 700px;
+      margin: auto;
+    }
+    h1 { font-size: 2rem; margin-bottom: 0.5rem; }
+    h2 { font-size: 1.4rem; margin-top: 2rem; }
+    p { margin: 1rem 0; }
+    a.button {
+      display: inline-block;
+      margin: 1rem 0;
+      padding: 0.6rem 1rem;
+      background: #0077cc;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+    .section { border-top: 1px solid #ddd; padding-top: 1.5rem; margin-top: 1.5rem; }
+    .subtitle { font-size: 0.95rem; color: #666; margin-top: 0.25rem; }
+  </style>
 </head>
-<body class="bg-brand-background text-brand-secondary antialiased">
-    <nav class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-lg border-b border-gray-200">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex items-center justify-between h-16">
-                <div class="flex items-center space-x-4">
-                    <!-- Using a different placeholder service for profile picture -->
-                    <img class="h-10 w-10 rounded-full" src="https://via.placeholder.com/40/2563eb/ffffff?text=JKS" alt="Joshua K Sriram">
-                    <span class="hidden sm:block font-bold text-brand-dark">Joshua K Sriram</span>
-                </div>
-                <a href="https://topmate.io/joshuaksriram/1667070/pay?utm_source=spotlight&utm_campaign=joshuaksriram" target="_blank" rel="noopener" class="inline-flex items-center justify-center px-5 py-2.5 text-sm font-semibold text-white bg-brand-primary rounded-xl shadow-button-primary hover:bg-blue-600 transition-all duration-300">
-                    <span class="hidden sm:inline">Book Photography Package</span>
-                    <span class="sm:hidden">Book Now</span>
-                </a>
-            </div>
-        </div>
-    </nav>
-    <main class="pt-24">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <section id="hero" class="text-center py-20 sm:py-32">
-                <p class="text-base font-medium text-brand-muted tracking-wider uppercase">Malmö Outdoor Photography Sessions</p>
-                <h1 class="mt-4 text-4xl sm:text-5xl lg:text-7xl font-extrabold text-brand-dark tracking-tight">
-                    Capture Your Story in Malmö.
-                </h1>
-                <p class="mt-6 max-w-2xl mx-auto text-lg sm:text-xl text-brand-secondary leading-relaxed">
-                    Choose from individual sessions or combine them for a special discount. Let's create something amazing together.
-                </p>
-                <a id="view-packages-btn" href="#whats_inside" class="mt-12 inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-white bg-brand-primary rounded-2xl-modern shadow-button-primary transform hover:scale-105 hover:shadow-lg transition-all duration-500">
-                    View Packages & Book
-                </a>
-            </section>
-            <section id="whats_inside" class="py-20 sm:py-32 mt-16">
-                <div class="text-center mb-16">
-                    <h2 class="text-4xl sm:text-5xl font-extrabold text-brand-dark tracking-tight">Our Photography Sessions</h2>
-                    <p class="mt-4 max-w-2xl mx-auto text-lg text-brand-secondary">Select the session that best suits your needs.</p>
-                </div>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
-                    <div class="bg-brand-surface rounded-2xl-modern shadow-card p-10 ring-1 ring-gray-200 hover:ring-brand-primary transition-all duration-300">
-                        <div class="flex items-center gap-4 mb-6">
-                           <i data-lucide="camera" class="w-10 h-10 text-brand-primary"></i>
-                           <h3 class="text-3xl font-extrabold text-brand-dark">1-Hour Portrait Session</h3>
-                        </div>
-                        <p class="mt-4 text-brand-secondary leading-relaxed">Our signature session for personal branding, couple portraits, or lifestyle photos.</p>
-                        <ul class="mt-8 space-y-5 text-brand-secondary">
-                            <li class="flex items-start">
-                                <i data-lucide="clock" class="w-6 h-6 mr-4 text-brand-primary flex-shrink-0"></i>
-                                <span class="text-lg"><strong>60-minute</strong> guided outdoor shoot in a beautiful Malmö location.</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i data-lucide="image" class="w-6 h-6 mr-4 text-brand-primary flex-shrink-0"></i>
-                                <span class="text-lg"><strong>20+ professionally edited</strong> high-resolution photos.</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i data-lucide="shirt" class="w-6 h-6 mr-4 text-brand-primary flex-shrink-0"></i>
-                                <span class="text-lg"><strong>1 outfit change</strong> to add variety to your gallery.</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i data-lucide="lightbulb" class="w-6 h-6 mr-4 text-brand-primary flex-shrink-0"></i>
-                                <span class="text-lg">Posing guidance and lighting tips to ensure you look your best.</span>
-                            </li>
-                        </ul>
-                        <div class="mt-10 text-center">
-                            <p class="text-4xl font-extrabold text-brand-dark">600 kr</p>
-                            <a href="https://topmate.io/joshuaksriram/1667070/pay?utm_source=spotlight&utm_campaign=joshuaksriram" target="_blank" rel="noopener" class="mt-5 w-full inline-flex items-center justify-center px-7 py-3 text-lg font-bold text-white bg-brand-primary rounded-xl shadow-button-primary hover:bg-blue-600 transition-all duration-300">
-                                Book This Session
-                            </a>
-                        </div>
-                    </div>
-                    <div class="bg-brand-surface rounded-2xl-modern shadow-card p-10 ring-1 ring-gray-200 hover:ring-brand-primary transition-all duration-300">
-                       <div class="flex items-center gap-4 mb-6">
-                           <i data-lucide="aperture" class="w-10 h-10 text-brand-primary"></i>
-                           <h3 class="text-3xl font-extrabold text-brand-dark">30-Minute Mini Session</h3>
-                        </div>
-                        <p class="mt-4 text-brand-secondary leading-relaxed">Perfect for quick profile updates, social media content, or a fun portrait refresh.</p>
-                        <ul class="mt-8 space-y-5 text-brand-secondary">
-                            <li class="flex items-start">
-                                <i data-lucide="clock" class="w-6 h-6 mr-4 text-brand-primary flex-shrink-0"></i>
-                                <span class="text-lg"><strong>30-minute</strong> quick and efficient outdoor shoot.</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i data-lucide="image-up" class="w-6 h-6 mr-4 text-brand-primary flex-shrink-0"></i>
-                                <span class="text-lg"><strong>10+ professionally edited</strong> high-quality photos.</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i data-lucide="sparkles" class="w-6 h-6 mr-4 text-brand-primary flex-shrink-0"></i>
-                                <span class="text-lg">Ideal for solo portraits and dynamic content creators.</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i data-lucide="fast-forward" class="w-6 h-6 mr-4 text-brand-primary flex-shrink-0"></i>
-                                <span class="text-lg">Quick photo delivery within <strong>3-4 days</strong>.</span>
-                            </li>
-                        </ul>
-                         <div class="mt-10 text-center">
-                            <p class="text-4xl font-extrabold text-brand-dark">350 kr</p>
-                            <a href="https://topmate.io/joshuaksriram/1667070/pay?utm_source=spotlight&utm_campaign=joshuaksriram" target="_blank" rel="noopener" class="mt-5 w-full inline-flex items-center justify-center px-7 py-3 text-lg font-bold text-white bg-brand-primary rounded-xl shadow-button-primary hover:bg-blue-600 transition-all duration-300">
-                                Book This Session
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="mt-16 text-center bg-brand-accent-light p-8 rounded-2xl-modern shadow-lg">
-                    <h4 class="text-2xl font-extrabold text-brand-primary">🎁 Optional Add-Ons</h4>
-                    <p class="mt-3 text-brand-secondary">Want more? These can be added after your booking:</p>
-                    <p class="mt-4 text-sm text-brand-muted font-medium">Extra Photos • Express Delivery • Reels Video • Extra Person</p>
-                </div>
-            </section>
-            <section id="is_this_for_you" class="py-20 sm:py-32">
-                <div class="max-w-3xl mx-auto">
-                    <h2 class="text-4xl sm:text-5xl font-extrabold text-brand-dark tracking-tight text-center">Who Are These Sessions For?</h2>
-                    <p class="mt-4 text-lg text-brand-secondary text-center">Whether you're an individual or a couple, these sessions are designed for you.</p>
-                    <ul class="mt-12 space-y-8">
-                        <li class="flex items-start">
-                            <i data-lucide="check-circle-2" class="w-7 h-7 mr-5 text-brand-primary flex-shrink-0"></i>
-                            <div>
-                                <h4 class="font-extrabold text-xl text-brand-dark mb-1.5">Content Creators & Professionals</h4>
-                                <p class="text-brand-secondary leading-relaxed">Need fresh, high-quality photos for your website, social media, or LinkedIn? Build your personal brand with stunning visuals.</p>
-                            </div>
-                        </li>
-                        <li class="flex items-start">
-                            <i data-lucide="check-circle-2" class="w-7 h-7 mr-5 text-brand-primary flex-shrink-0"></i>
-                            <div>
-                                <h4 class="font-extrabold text-xl text-brand-dark mb-1.5">Couples & Families</h4>
-                                <p class="text-brand-secondary leading-relaxed">Capture beautiful, natural moments together in Malmö's scenic locations.</p>
-                            </div>
-                        </li>
-                        <li class="flex items-start">
-                            <i data-lucide="check-circle-2" class="w-7 h-7 mr-5 text-brand-primary flex-shrink-0"></i>
-                             <div>
-                                <h4 class="font-extrabold text-xl text-brand-dark mb-1.5">Solo Explorers & Malmö Residents</h4>
-                                <p class="text-brand-secondary leading-relaxed">Treat yourself to a confidence-boosting photoshoot and get stunning pictures that capture your personality.</p>
-                            </div>
-                        </li>
-                        <li class="flex items-start">
-                            <i data-lucide="check-circle-2" class="w-7 h-7 mr-5 text-brand-primary flex-shrink-0"></i>
-                            <div>
-                                <h4 class="font-extrabold text-xl text-brand-dark mb-1.5">Gift Givers</h4>
-                                <p class="text-brand-secondary leading-relaxed">Looking for a unique and memorable gift for a friend or loved one who deserves to be in the spotlight.</p>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </section>
-            <section id="about_expert" class="py-20 sm:py-32 bg-brand-surface rounded-2xl-modern shadow-lg my-16">
-                <div class="max-w-4xl mx-auto px-6 lg:px-8">
-                    <div class="flex flex-col md:flex-row items-center gap-12">
-                        <!-- Using a different placeholder service for profile picture -->
-                        <img class="w-40 h-40 rounded-full object-cover shadow-xl md:w-56 md:h-56 flex-shrink-0" src="https://via.placeholder.com/224/2563eb/ffffff?text=JKS" alt="Joshua K Sriram">
-                        <div class="text-center md:text-left">
-                            <h2 class="text-4xl font-extrabold text-brand-dark">Meet Your Photographer</h2>
-                            <h3 class="mt-3 text-2xl font-bold text-brand-secondary">Joshua K Sriram</h3>
-                            <p class="mt-6 text-brand-secondary leading-relaxed">
-                                I'm passionate about making people feel comfortable and confident, whether it's through speaking English or being in front of the camera. My goal is to create a relaxed, guided experience where your personality can shine.
-                            </p>
-                            <p class="mt-3 text-brand-secondary leading-relaxed">
-                                I'll help with posing, finding the perfect natural light, and choosing locations in Malmö that match your vision. Let’s create photos you’ll be proud to share!
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section id="pricing" class="py-20 sm:py-32">
-                <div class="max-w-2xl mx-auto bg-brand-primary text-white rounded-2xl-modern shadow-lg-modern p-10 sm:p-12 text-center">
-                    <h2 class="text-4xl sm:text-5xl font-extrabold tracking-tight">Choose Your Session or Bundle</h2>
-                    <p class="mt-4 text-lg text-gray-200">Combine sessions and save!</p>
-                    <div class="mt-10 space-y-5 text-lg">
-                        <div class="flex justify-between items-center border-b border-gray-700 pb-3">
-                            <span>1-Hour Portrait Session</span>
-                            <span class="font-bold text-xl">600 kr</span>
-                        </div>
-                         <div class="flex justify-between items-center border-b border-gray-700 pb-3">
-                            <span>30-Minute Mini Session</span>
-                            <span class="font-bold text-xl">350 kr</span>
-                        </div>
-                        <div class="flex justify-between items-center pt-3">
-                            <span class="text-gray-300">Combined Value:</span>
-                            <span class="font-bold text-2xl"><del>950 kr</del></span>
-                        </div>
-                    </div>
-                    <div class="mt-12">
-                        <p class="text-base text-gray-300">Bundle Price (Save 50 kr)</p>
-                        <p class="text-6xl sm:text-7xl font-extrabold tracking-tightest">900 kr</p>
-                        <p class="mt-3 text-xl font-bold text-green-300">Get both sessions for 900 kr!</p>
-                    </div>
-                    <a href="https://topmate.io/joshuaksriram/1667070/pay?utm_source=spotlight&utm_campaign=joshuaksriram" target="_blank" rel="noopener" class="mt-12 w-full inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-brand-primary bg-white rounded-2xl-modern shadow-button-primary transform hover:scale-105 hover:shadow-lg transition-all duration-500">
-                        Book the Bundle Deal
-                    </a>
-                </div>
-            </section>
-            <section id="cta" class="py-20 sm:py-32 text-center">
-                <h2 class="text-4xl sm:text-5xl font-extrabold text-brand-dark">Ready to Capture Your Malmö Story?</h2>
-                <p class="mt-4 max-w-xl mx-auto text-lg text-brand-secondary leading-relaxed">
-                    Choose your session or grab the bundle deal. Your outdoor portrait session in Malmö is just a click away.
-                </p>
-                <a href="https://topmate.io/joshuaksriram/1667070/pay?utm_source=spotlight&utm_campaign=joshuaksriram" target="_blank" rel="noopener" class="mt-12 inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-white bg-brand-primary rounded-2xl-modern shadow-button-primary transform hover:scale-105 hover:shadow-lg transition-all duration-500">
-                    Book Your Session Now
-                </a>
-            </section>
-        </div>
-    </main>
-    <footer class="text-center py-12 border-t border-gray-200 mt-24">
-        <p class="text-base text-brand-muted">&copy; 2025 Joshua K Sriram</p>
-        <p class="text-base text-brand-muted mt-2">Made with <a href="https://topmate.io" target="_blank" rel="noopener" class="font-semibold text-brand-secondary hover:underline">Topmate Sites</a></p>
-    </footer>
-    <script>
-        lucide.createIcons();
+<body>
+  <header>
+    <h1>Joshua K. Sriram</h1>
+    <p class="subtitle">aka Nordic Explorer Tamil</p>
+    <p>Book your sessions below:</p>
+  </header>
 
-        document.addEventListener('DOMContentLoaded', function() {
-            const viewPackagesBtn = document.getElementById('view-packages-btn');
-            if (viewPackagesBtn) {
-                viewPackagesBtn.addEventListener('click', function(event) {
-                    event.preventDefault();
-                    const servicesSection = document.getElementById('whats_inside');
-                    if (servicesSection) {
-                        servicesSection.scrollIntoView({
-                            behavior: 'smooth'
-                        });
-                    }
-                });
-            }
-        });
-    </script>
+  <div class="section">
+    <h2>📷 Photography Sessions</h2>
+    <p>Get personalized 1:1 photography sessions focused on architecture, street photography, and editing. Available in Tamil & English.</p>
+    <ul>
+      <li>Beginner to Advanced sessions</li>
+      <li>Outdoor shoot guidance or remote feedback</li>
+      <li>Lightroom & Snapseed editing tutorials</li>
+    </ul>
+    <a class="button" href="https://wa.me/919123456789?text=Hi%20Joshua!%20I'm%20interested%20in%20your%20photography%20sessions." target="_blank">📩 Book via WhatsApp</a>
+  </div>
+
+  <div class="section">
+    <h2>🗣 Spoken English Coaching</h2>
+    <p>Friendly spoken English coaching to boost fluency and confidence. Especially designed for Tamil speakers and working professionals.</p>
+    <ul>
+      <li>Personalized 1:1 sessions (online)</li>
+      <li>Interview, conversation, and grammar help</li>
+      <li>Tamil + English blended learning</li>
+    </ul>
+    <a class="button" href="https://wa.me/919123456789?text=Hi%20Joshua!%20I%20want%20to%20book%20a%20spoken%20English%20session." target="_blank">📩 Book via WhatsApp</a>
+  </div>
+
+  <footer class="section">
+    <p style="font-size: 0.8rem; color: #888;">Copyright © 2025 Joshua K. Sriram</p>
+  </footer>
 </body>
 </html>
