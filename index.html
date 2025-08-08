@@ -107,48 +107,78 @@
   </div>
 </section>
 
-  <<section>
-    <h2 class="section-title">What Makes This Program Different?</h2>
-    <div class="features">
-      <div class="feature">
-        <h4>🌟 Personalized Coaching</h4>
-        <p>1:1 sessions tailored to your level and goals.</p>
+  <section style="background: #f9fafc; padding: 50px 20px; font-family: 'Poppins', sans-serif;">
+  <div style="max-width: 900px; margin: 0 auto; text-align: center;">
+    <h2 style="font-size: 2rem; color: #1a1a1a; margin-bottom: 30px;">What Makes Us Different?</h2>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 25px;">
+      
+      <div style="background: white; padding: 25px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); transition: transform 0.3s ease;">
+        <div style="font-size: 2rem; margin-bottom: 10px;">💬</div>
+        <h3 style="font-size: 1.1rem; margin-bottom: 8px; color: #1a1a1a;">Tailored to You</h3>
+        <p style="color: #555;">Your goals. Your pace. Your journey. Every session is built just for you.</p>
       </div>
-      <div class="feature">
-        <h4>🌍 Real-World Relevance</h4>
-        <p>Focus on daily conversation, interviews, and Swedish contexts.</p>
-      </div>
-      <div class="feature">
-        <h4>🎯 Flexible Learning</h4>
-        <p>Pick a schedule that works for you — anytime, anywhere.</p>
-      </div>
-      <div class="feature">
-        <h4>🔊 Clear Communication</h4>
-        <p>Refine your pronunciation, tone, and confidence with expert feedback.</p>
-      </div>
-    </div>
-  </section>
 
-  <section class="testimonials">
-    <h2>Hear From Real Learners</h2>
-    <div class="testimonial">
-      <strong>Alex Chen – Beginner Learner</strong>
-      <p>"Joshua made learning English so much less intimidating! His one-on-one sessions were exactly what I needed to overcome my fear of speaking."</p>
-    </div>
-    <div class="testimonial">
-      <strong>Maria Garcia – Intermediate Student</strong>
-      <p>"The structured approach and Joshua's patient guidance were fantastic. I improved my pronunciation and confidently join conversations now."</p>
-    </div>
-  </section>
+      <div style="background: white; padding: 25px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); transition: transform 0.3s ease;">
+        <div style="font-size: 2rem; margin-bottom: 10px;">🗣️</div>
+        <h3 style="font-size: 1.1rem; margin-bottom: 8px; color: #1a1a1a;">Speak for Real Life</h3>
+        <p style="color: #555;">Master conversations you’ll actually have — at work, with friends, or in interviews.</p>
+      </div>
 
-  <section>
-    <h2>Ready to Speak with Unwavering Confidence?</h2>
-    <p>Book your first session or a free consultation to discuss your goals and how we can achieve them together.</p>
-    <div class="cta-buttons">
-      <button onclick="openPopup()">Book Beginner Package (kr1500)</button>
-      <button onclick="openPopup()">Book Free Consultation</button>
+      <div style="background: white; padding: 25px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); transition: transform 0.3s ease;">
+        <div style="font-size: 2rem; margin-bottom: 10px;">⏳</div>
+        <h3 style="font-size: 1.1rem; margin-bottom: 8px; color: #1a1a1a;">Your Time, Your Rules</h3>
+        <p style="color: #555;">Pick a time. We’ll be there. Learn from anywhere, anytime.</p>
+      </div>
+
+      <div style="background: white; padding: 25px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); transition: transform 0.3s ease;">
+        <div style="font-size: 2rem; margin-bottom: 10px;">🎤</div>
+        <h3 style="font-size: 1.1rem; margin-bottom: 8px; color: #1a1a1a;">Sound Like You Mean It</h3>
+        <p style="color: #555;">Polish your tone, pronunciation, and delivery so your words truly connect.</p>
+      </div>
+
     </div>
-  </section>
+  </div>
+</section>
+
+<script>
+  // Simple hover animation
+  document.querySelectorAll('section div[style*="box-shadow"]').forEach(card => {
+    card.addEventListener('mouseenter', () => card.style.transform = 'translateY(-5px)');
+    card.addEventListener('mouseleave', () => card.style.transform = 'translateY(0)');
+  });
+</script>
+
+  <section style="padding: 40px 20px; background: #f9f9f9; font-family: 'Poppins', sans-serif;">
+  <h2 style="text-align: center; font-size: 2em; margin-bottom: 30px; color: #333;">
+    Hear From Real Learners
+  </h2>
+  
+  <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
+
+    <!-- Card 1 -->
+    <div style="background: white; border-radius: 12px; padding: 20px; max-width: 320px; 
+                box-shadow: 0 4px 20px rgba(0,0,0,0.08); transition: transform 0.3s;">
+      <h3 style="margin: 0; font-size: 1.2em; color: #007acc;">Alex Chen</h3>
+      <p style="margin: 5px 0 15px; font-size: 0.9em; color: #666;">Beginner Learner</p>
+      <p style="font-style: italic; color: #444; line-height: 1.5;">
+        "Joshua made learning English so much less intimidating! His one-on-one sessions 
+        were exactly what I needed to overcome my fear of speaking."
+      </p>
+    </div>
+
+    <!-- Card 2 -->
+    <div style="background: white; border-radius: 12px; padding: 20px; max-width: 320px; 
+                box-shadow: 0 4px 20px rgba(0,0,0,0.08); transition: transform 0.3s;">
+      <h3 style="margin: 0; font-size: 1.2em; color: #007acc;">Maria Garcia</h3>
+      <p style="margin: 5px 0 15px; font-size: 0.9em; color: #666;">Intermediate Student</p>
+      <p style="font-style: italic; color: #444; line-height: 1.5;">
+        "The structured approach and Joshua's patient guidance were fantastic. I improved 
+        my pronunciation and confidently join conversations now."
+      </p>
+    </div>
+
+  </div>
+</section>
 
   <footer style="margin-top: 60px; text-align: center; font-size: 0.9rem; color: #777">
     © 2025 Joshua K Sriram. All rights reserved.<br>
